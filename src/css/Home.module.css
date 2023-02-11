@@ -1,0 +1,179 @@
+.section1{
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--azulescuro);
+    color: var(--branco);
+}
+.section1 h1{
+    margin-top: 100px;
+    margin-bottom: 24px;
+    font: 600 normal 48px/80px Mukta;
+}
+.section1 p{
+    max-width: 1000px;
+    font: 500 normal 24px/38px Inter;
+    margin-bottom: 100px;
+}
+.comp{
+    display: flex;
+    flex-direction: row;
+}
+
+.comp span{
+    font: 500 normal 16px/22px Inter;
+    padding: 54px 80px;
+    flex: 33.333%;
+}
+.span1{
+    background-color: var(--cinza-escuro);
+}
+.span2{
+    background-color: var(--vermelho);
+}
+.span3{
+    background-color: var(--roxo);
+}
+.section2{
+    flex-direction: column;
+    display: flex;
+    height:max-content;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--branco);
+
+}
+.section2 h2{
+    font: var(--font-titulo-pg1);
+    margin: 107px auto 50px auto;
+}
+.cursos{
+display: flex;
+max-width: 1216px;
+flex-wrap: wrap;
+gap: 32px;
+margin-bottom: 100px;
+justify-content: center;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 600px;
+    max-width: 1500px;
+}
+.empregofoto{
+    height: 100%;
+    background-color: var(--vermelho);
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    text-transform: uppercase;
+    font: 600 normal 48px/56px Mukta;
+    text-align: center;
+}
+.empregos{
+    height: 100%;
+    flex: 50%;
+    background-color:var(--cinza-claro);
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}.empregos>div{
+    display: flex;
+
+    flex-direction: column;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.empregos>div h3{
+    display: flex;
+    font: 600 normal 24px/40px Mukta;
+    flex-direction: column;
+    gap: 16px;
+    cursor: pointer;
+}
+.empregos>div span{
+    font: 400 normal 18px/23px Inter;
+}
+.empregos>div a{
+    color: var(--vermelho);
+    font: 500 normal 18px/22px Inter;
+}
+
+  @media only screen and (max-width: 992px) {
+    .comp{
+        display: none;
+     }
+
+
+
+  }
+  @media only screen and (max-width: 860px) {
+    .section3{
+        flex-direction: column;
+        height: max-content;
+
+    }
+    .empregofoto{
+        text-align: center;
+        height: 150px;
+        flex: none;
+        width: 100%;
+    }
+    .empregos{
+        height: max-content;
+        flex: none;
+        gap: 24px;
+        width: 100%;
+        padding: 24px;
+        padding-top: 40px;
+    }
+    
+  
+  }
+  @media only screen and (max-width: 700px) { 
+    .section1{
+        height: 414px;
+    }
+    .section1 h1{
+        margin-top: 0;
+        margin-bottom: 24px;
+        font: 600 normal 32px/53px Mukta;
+    }
+    .section1 p{
+        margin-bottom: 0;
+        max-width: 1000px;
+        font: 400 normal 16px/25px Inter;
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    .cursos{
+        gap: 24px;
+        margin-bottom: 40px;
+        }
+    .section2 h2{
+        font: var(--font-titulo-pg1-m);
+        margin: 40px auto 32px auto;
+    }  
+    .empregofoto{
+        font: 600 normal 32px/53px Mukta;
+    }
+    .empregos h3{
+        font: 600 normal 20px/33px Mukta;
+        gap: 8px;
+    }
+    .empregos h3>span{
+        font: 400 normal 16px/19px Inter;
+    }
+    .empregos h3>a{
+        font: 500 normal 14px/17px Inter;
+    }  
+  }

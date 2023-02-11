@@ -1,0 +1,55 @@
+.curso{
+    text-decoration: none;
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 69px;
+    background-color: var(--cinza-claro);
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font: 600 normal 20px/25px Inter;
+    color: var(--azulescuro);
+    border-radius: var(--radius1);
+}
+
+.image{
+    width: 125px;
+    height: 125px;
+    margin-bottom: 24px;
+}
+.section2{
+    flex-direction: column;
+    display: flex;
+    height:max-content;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--branco);
+
+}
+.section2 h2{
+    font: var(--font-titulo-pg1);
+    margin: 107px auto 50px auto;
+}
+.cursos{
+display: flex;
+max-width: 1216px;
+flex-wrap: wrap;
+gap: 32px;
+margin-bottom: 100px;
+justify-content: center;
+}
+@media only screen and (max-width: 560px) {
+    .curso{
+        width: 366px;
+        height: 222px;
+        font: 600 normal 24px/29px Inter;
+    }
+    
+    .image{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 33px;
+    }
+  }

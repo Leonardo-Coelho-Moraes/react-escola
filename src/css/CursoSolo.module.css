@@ -1,0 +1,119 @@
+.titulo{
+    width: 100%;
+    background-color: var(--vermelho);
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+.titulo h1{
+    font: var( --font-titulo-cn);
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding: 100px 0px ;
+    justify-content: space-between;
+    gap: 54px;
+}
+.fotoCurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vermelho);
+    width: 488px;
+    font: 600 normal 32px/52px Mukta;
+    height: 488px; 
+}
+.sec1conteudo{
+    max-width: 670px;
+}
+.sec1conteudo p{
+    color: var(--cinza-escuro);
+    font: var(--font-curso-texto);
+}
+.espec{
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    flex-direction: column;
+}
+
+.infocurso{
+    display: flex;
+    gap: 1em;
+}
+
+.infocurso h3{
+    font: 600 normal 18px/30px Mukta;
+    color: var(--vermelho);
+}
+.cursoh{
+    font: 500 normal 18px/22px Inter;
+    color: var(--cinza-escuro);
+}
+.section2{
+    width: 100%;
+    background-color: var(--cinza-claro);
+    padding: 48px 0px ;
+}
+.section2 h2, .section3 h2{
+    font: var(--font-objetivo-curso);
+    margin-bottom: 1em;
+}
+.section2 p, .section3 p{
+    font: var(--font-curso-texto);
+
+}
+
+.section3{
+    width: 100%;
+    padding: 48px 0px ;
+}
+@media only screen and (max-width: 1150px) {
+    .sec1conteudo{
+        max-width: 600px;
+    }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .sec1conteudo{
+        max-width: 520px;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+
+    .section1{
+        flex-direction: column;
+        gap: 31px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .fotoCurso{
+        width: 366px;
+        height: 250px; 
+    }
+    .titulo h1{
+        font: var( --font-titulo-cn-m);
+    }
+    .section2 h2, .section3 h2{
+        font: var(--font-objetivo-curso-m);
+        margin-bottom: 1em;
+    }
+    .section2 p, .section3 p{
+        font: var(--font-curso-texto-m);
+    
+    }
+    .titulo{
+        height: 100px;
+    }
+
+  }

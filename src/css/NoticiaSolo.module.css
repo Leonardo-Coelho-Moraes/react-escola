@@ -1,0 +1,138 @@
+.compartilhar{
+    display: flex;
+    width: 100%;
+}
+
+.compartilhar>a{
+    padding: 12px;
+    width: 33.333%;
+    aspect-ratio: 4/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 100px;
+
+    text-align: center;
+}
+
+.compartilhar a:nth-child(1){
+    background-color: #3B5999;
+}
+.compartilhar a:nth-child(1):hover{
+    background-color: #2e509a;
+}
+.compartilhar a:nth-child(2){
+    background-color: #EE3A5D;
+}
+.compartilhar a:nth-child(2):hover{
+    background-color: #ee2d54;
+}
+.compartilhar a:nth-child(3){
+    background-color: #00A0D0;
+}
+.compartilhar a:nth-child(3):hover{
+    background-color: #0289b3;
+}
+.compartilhar a>h3{
+    color: var(--branco);
+    text-transform: uppercase;
+    font: 600 normal 24px/38px Mukta;
+}
+.compartilhar>a:hover h3{
+    font: 600 normal 26px/38px Mukta;
+    
+}
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+.sec1{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    }
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 2.3/1;
+    max-height: 100%;
+    background-color: var(--vermelho);
+    margin-bottom: 40px;
+    align-self: center;
+}
+.banner h1{
+   color: var(--branco);
+   font: 600 normal 64px/106px Mukta;
+   text-transform: uppercase;
+}
+.sec1 h2{
+    font:500 normal 32px/44px Mukta;
+    color: var(--azulescuro);
+    margin-bottom: 24px;
+}
+.sec1 p{
+    font: var(--font-noticiap);
+    color: var(--cinza-escuro);
+   
+}
+.data{
+    font: 400 normal 20px/24px Inter;
+    margin-bottom: 46px;
+    color: var(--azulescuro);
+}
+
+.aside{
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 300px;
+}
+.aside h2{
+    font: 500 normal 32px/56px Mukta;
+    color: var(--azulescuro);
+}
+.aside p{
+    font: var(--font-noticiap-m);
+    color: var(--cinza-escuro);
+}
+@media only screen and (max-width: 992px) {
+    .aside{
+        display: none;
+    }
+    .compartilhar{
+        display: none;
+    }
+    .conteudo{
+        justify-content: center;
+    }
+  }
+@media only screen and (max-width: 560px) {
+    .banner{
+        width: 336px;
+        aspect-ratio:none;
+        height: 250px;
+    }
+    .banner h1{
+       font: 600 normal 24px/32px Mukta;
+    }
+    .sec1 h2{
+        font:500 normal 20px/28px Mukta;
+        margin-bottom: 16px;
+    }
+    .sec1 p{
+        font: var(--font-noticiap-m);
+    }
+    .data{
+        font: 400 normal 16px/19px Inter;
+        margin-bottom: 32px;
+    }
+    
+  }
