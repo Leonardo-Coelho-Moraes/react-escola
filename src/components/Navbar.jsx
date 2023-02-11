@@ -3,53 +3,22 @@ import Logosite from '../img/Logo.png';
 import LogoIntagram from '../img/InstagramLogo.svg';
 import LogoFacebook from '../img/FacebookLogo.svg';
 import LogoLinkedin from '../img/LinkedinLogo.svg';
-class MobileNavbar {
-constructor(mobileMenu, navList, navLinks) {
-this.mobileMenu = document.querySelector(mobileMenu);
-this.navList = document.querySelector(navList);
-this.navLinks = document.querySelectorAll(navLinks);
-this.activeClass = "active";
-this.handleClick = this.handleClick.bind(this);
-}
-handleClick() {
-this.navList.classList.toggle(this.activeClass);
-this.mobileMenu.classList.toggle(this.activeClass);
-}
-
-addClickEvent() {
-this.mobileMenu.addEventListener("click", this.handleClick);
-}
-
-init() {
-if (this.mobileMenu) {
-this.addClickEvent();
-}
-return this;
-}
-}
-
-const mobileNavbar = new MobileNavbar(
-".mobile-menu",
-".nav-list",
-".linknav",
-);
-
-mobileNavbar.init();
+import { useState } from 'react';
 
 
 export default function Navbar(){
-
+const [IsMenuActive, setIsMenuActive] = useState(false)
 
 return(
 <header>
   <nav className='container'>
     <Link to='/'><img src={Logosite} alt="Logo Site" /></Link>
-    <div className='mobile-menu'>
+    <div className='mobile-menu' onClick={() => {!IsMenuActive? setIsMenuActive(true) : setIsMenuActive(false)}}>
       <div className='line1'></div>
       <div className='line2'></div>
       <div className='line3'></div>
     </div>
-    <ul className='nav-list'>
+    <ul className={`nav-list ${!IsMenuActive? 'active' : ''}`}>
       <li>
         <NavLink to='/' className={({ isActive })=> (isActive ? 'link active' : 'link')}>Início</NavLink>
       </li>
