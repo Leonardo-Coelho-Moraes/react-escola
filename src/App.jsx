@@ -17,7 +17,7 @@ export default function App() {
     <BrowserRouter>
     
       <Routes>
-          <Route path="/" element={<SharedLayout/>}>
+          <Route path="/"  exact element={<SharedLayout/>}>
               <Route index element= {<Home/>} />
               <Route path="noticias" element={<Noticias/>} />
               <Route path="noticias/:noticiaTitulo" element={<NoticiaSolo/>} />

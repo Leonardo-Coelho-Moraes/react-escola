@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 export default function Navbar(){
 const [IsMenuActive, setIsMenuActive] = useState(false)
-
 return(
 <header>
   <nav className='container'>
